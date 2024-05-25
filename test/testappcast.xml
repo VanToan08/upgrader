@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
-    <title>For unit test only</title>
+    <title>TOANnnn For unit test only</title>
     <item>
-        <title>Version 2.0</title>
+        <title>TOAN111 Version 2.0</title>
         <description>desc Версия</description>
         <pubDate>Sat, 26 Jul 2014 15:20:11 +0000</pubDate>
         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="2.0" />
@@ -12,7 +12,7 @@
     <!-- The best chosen release -->
     <item>
         <title>Version12 3.0</title>
-        <description>Minor updates and improvements.</description>
+        <description>TOAN Minor updates and improvements.</description>
         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="3.0" sparkle:os="android" />
         <sparkle:deltas>
             <enclosure url="http://localhost:1337/3.0_from_2.0.patch"
