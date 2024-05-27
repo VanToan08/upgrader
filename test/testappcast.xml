@@ -4,7 +4,7 @@
         <title>Debt Now App - Appcast</title>
         <item>
             <title>Version 1.15.0</title>
-            <description>Minor updates and improvements.</description>
+            <description>Minor updates and improvements 11111111111.</description>
             <pubDate>Sun, 30 Dec 2018 12:00:00 +0700</pubDate>
             <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
             <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion>
