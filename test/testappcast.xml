@@ -13,8 +13,8 @@
     <item>
         <title>Version 3.0</title>
         <description>Minor updates and improvements.</description>
-        <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="3.0" sparkle:os="android" />
-        <sparkle:deltas>
+        <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="3.9.0" sparkle:os="android" />
+<!--         <sparkle:deltas>
             <enclosure url="http://localhost:1337/3.0_from_2.0.patch"
             sparkle:version="3.0"
             sparkle:deltaFrom="2.0"
@@ -28,7 +28,7 @@
             length="1485"
             type="application/octet-stream"
             sparkle:edSignature="..." />
-        </sparkle:deltas>
+        </sparkle:deltas> -->
     </item>
   </channel>
 </rss>
