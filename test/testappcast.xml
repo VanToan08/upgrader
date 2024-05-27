@@ -10,25 +10,11 @@
             <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion>
             <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.9.0" sparkle:os="android" />
         </item> -->
+    <!-- A release testing maximumSystemVersion -->
     <item>
-        <title>Version 3.0</title>
-        <description>Minor updates and improvements.</description>
-        <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.0" sparkle:os="android" />
-        <sparkle:deltas>
-            <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla"
-            sparkle:version="3.0"
-            sparkle:deltaFrom="2.0"
-            length="1235"
-            type="application/octet-stream"
-            sparkle:edSignature="..." />
-            
-            <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla"
-            sparkle:version="3.0"
-            sparkle:deltaFrom="1.0"
-            length="1485"
-            type="application/octet-stream"
-            sparkle:edSignature="..." />
-        </sparkle:deltas>
+        <title>Version 5.0</title>
+        <sparkle:version>5.0</sparkle:version>
+        <sparkle:maximumSystemVersion>2.0.0</sparkle:maximumSystemVersion>
     </item>
     </channel>
 </rss>
