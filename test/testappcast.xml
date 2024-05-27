@@ -10,6 +10,14 @@
             <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion>
             <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.9.0" sparkle:os="android" />
         </item> -->
+    <!-- A release testing minimumSystemVersion -->
+    <item>
+        <title>Version 4.0</title>
+        <description>Minor updates and improvements.</description>
+        <pubDate>Sat, 26 Jul 2014 15:20:13 +0000</pubDate>
+        <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="4.0" sparkle:os="iOS" />
+        <sparkle:minimumSystemVersion>17.0.0</sparkle:minimumSystemVersion>
+    </item>
     <!-- A release testing maximumSystemVersion -->
     <item>
         <title>Version 5.0</title>
