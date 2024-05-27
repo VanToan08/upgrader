@@ -8,7 +8,7 @@
             <pubDate>Sun, 30 Dec 2018 12:00:00 +0700</pubDate>
             <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
             <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="1.15.0" sparkle:os="android" />
+            <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.9.0" sparkle:os="android" />
         </item>
     </channel>
 </rss>
