@@ -6,7 +6,7 @@
         <title>Version 2.0</title>
         <description>desc Версия</description>
         <pubDate>Sat, 26 Jul 2014 15:20:11 +0700</pubDate>
-        <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
+        <sparkle:phasedRolloutInterval>60</sparkle:phasedRolloutInterval>
 <!--         <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="2.0" /> -->
         <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
     </item>
