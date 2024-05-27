@@ -7,13 +7,14 @@
         <description>desc Версия</description>
         <pubDate>Sat, 26 Jul 2014 15:20:11 +0700</pubDate>
         <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
-<!--         <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="2.0" /> -->
+        <enclosure url="http://localhost:1337/Sparkle_Test_App.zip" sparkle:version="2.0" />
         <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
     </item>
     <!-- The best chosen release -->
     <item>
         <title>Version 3.0</title>
         <description>Minor updates and improvements.</description>
+        <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
         <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.9.0" sparkle:os="android" />
     </item>
   </channel>
