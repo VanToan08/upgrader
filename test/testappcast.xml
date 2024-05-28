@@ -5,8 +5,9 @@
         <title>asdfasdfsda</title>
         <description><p>Bug fixes and improvements 12324</p> </description>
         <pubDate>Mon, 27 May 2024 09:50:55 +0000</pubDate>
+        <sparkle:phasedRolloutInterval>1</sparkle:phasedRolloutInterval>
         <enclosure url="https://play.google.com/store/apps/details?id=io.rnlab.cirilla" sparkle:version="3.9.0" sparkle:os="android"/>
-        <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion>
+<!--         <sparkle:minimumSystemVersion>3.9.0</sparkle:minimumSystemVersion> -->
     </item>
   </channel>
 </rss>
