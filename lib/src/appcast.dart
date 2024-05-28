@@ -154,6 +154,7 @@ class Appcast {
         String? newVersion;
         String? itemVersion;
         String? enclosureVersion;
+        int? phasedRolloutInterval;
 
         itemElement.children.forEach((XmlNode childNode) {
           if (childNode is XmlElement) {
@@ -192,6 +193,8 @@ class Appcast {
               });
             } else if (name == AppcastConstants.AttributeVersion) {
               itemVersion = childNode.innerText;
+            } else if (name == AppcastConstants.ElementPhasedRolloutInterval) {
+              phasedRolloutInterval = int.parse(childNode.innerText);
             }
           }
         });
@@ -218,6 +221,7 @@ class Appcast {
           tags: tags,
           fileURL: fileURL,
           versionString: newVersion,
+          phasedRolloutInterval: phasedRolloutInterval,
         );
         localItems.add(item);
       });
@@ -245,7 +249,7 @@ class AppcastItem {
   final String? displayVersionString;
   final String? infoURL;
   final List<String>? tags;
-
+  final int? phasedRolloutInterval;
   AppcastItem({
     this.title,
     this.dateString,
@@ -260,6 +264,7 @@ class AppcastItem {
     this.displayVersionString,
     this.infoURL,
     this.tags,
+    this.phasedRolloutInterval,
   });
 
   /// Returns true if the tags ([AppcastConstants.ElementTags]) contains
@@ -330,6 +335,7 @@ class AppcastConstants {
       'sparkle:maximumSystemVersion';
   static const String ElementReleaseNotesLink = 'sparkle:releaseNotesLink';
   static const String ElementTags = 'sparkle:tags';
+  static const String ElementPhasedRolloutInterval = 'sparkle:phasedRolloutInterval';
 
   static const String AttributeURL = 'url';
   static const String AttributeLength = 'length';

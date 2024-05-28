@@ -4,6 +4,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:html/parser.dart';
 
 import 'upgrade_messages.dart';
 import 'upgrade_state.dart';
@@ -144,10 +145,9 @@ class UpgradeAlertState extends State<UpgradeAlert> {
         showTheDialog(
           key: widget.dialogKey ?? const Key('upgrader_alert_dialog'),
           context: context,
-          title: appMessages.message(UpgraderMessage.title),
+          title: widget.upgrader.title == '' ? appMessages.message(UpgraderMessage.title) : widget.upgrader.title,
           message: widget.upgrader.body(appMessages),
-          releaseNotes:
-              shouldDisplayReleaseNotes ? widget.upgrader.releaseNotes : null,
+          releaseNotes: shouldDisplayReleaseNotes ? widget.upgrader.releaseNotes : null,
           barrierDismissible: widget.barrierDismissible,
           messages: appMessages,
         );
@@ -288,6 +288,7 @@ class UpgradeAlertState extends State<UpgradeAlert> {
 
     Widget? notes;
     if (releaseNotes != null) {
+     String parsedStringReleaseNotes = parse(releaseNotes).documentElement?.text ?? '';
       notes = Padding(
           padding: const EdgeInsets.only(top: 15.0),
           child: Column(
@@ -298,7 +299,7 @@ class UpgradeAlertState extends State<UpgradeAlert> {
             children: <Widget>[
               Text(messages.message(UpgraderMessage.releaseNotes) ?? '',
                   style: const TextStyle(fontWeight: FontWeight.bold)),
-              Text(releaseNotes),
+              Text(parsedStringReleaseNotes),
             ],
           ));
     }

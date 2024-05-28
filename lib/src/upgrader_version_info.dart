@@ -9,6 +9,8 @@ class UpgraderVersionInfo {
   final bool? isCriticalUpdate;
   final Version? minAppVersion;
   final String? releaseNotes;
+  final String? title;
+  final int? phasedRolloutInterval;
 
   UpgraderVersionInfo({
     this.appStoreListingURL,
@@ -17,6 +19,8 @@ class UpgraderVersionInfo {
     this.isCriticalUpdate,
     this.minAppVersion,
     this.releaseNotes,
+    this.title,
+    this.phasedRolloutInterval,
   });
 
   @override
@@ -26,6 +30,8 @@ class UpgraderVersionInfo {
         'installedVersion: $installedVersion, '
         'isCriticalUpdate: $isCriticalUpdate, '
         'minAppVersion: $minAppVersion, '
-        'releaseNotes: $releaseNotes';
+        'releaseNotes: $releaseNotes, '
+        'title: $title, '
+        'phasedRolloutInterval: $phasedRolloutInterval';
   }
 }

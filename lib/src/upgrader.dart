@@ -345,7 +345,16 @@ class Upgrader with WidgetsBindingObserver {
     }
 
     final lastAlertedDuration = DateTime.now().difference(_lastTimeAlerted!);
-    final rv = lastAlertedDuration < state.durationUntilAlertAgain;
+
+    bool rv = false;
+
+    if (state.versionInfo?.phasedRolloutInterval == null) {
+      rv = lastAlertedDuration < state.durationUntilAlertAgain;
+    } else {
+      int interval = state.versionInfo!.phasedRolloutInterval ?? 0;
+      rv = lastAlertedDuration < Duration(seconds: interval);
+    }
+
     if (rv && state.debugLogging) {
       print('upgrader: isTooSoon: true');
     }
@@ -550,6 +559,10 @@ extension UpgraderExt on Upgrader {
   String? get currentInstalledVersion => state.packageInfo?.version;
 
   String? get releaseNotes => state.versionInfo?.releaseNotes;
+
+  String? get title => state.versionInfo?.title;
+
+  int? get phasedRolloutInterval => state.versionInfo?.phasedRolloutInterval;
 
   void installPackageInfo({PackageInfo? packageInfo}) {
     updateState(state.copyWith(packageInfo: packageInfo),
